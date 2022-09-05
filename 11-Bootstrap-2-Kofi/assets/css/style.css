@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+/* img{
+    width: 100%;
+} */
+
+/* .container{
+    overflow: hidden ;
+} */
+
+#Header .navbar{
+    position: relative;
+}
+
+#Header .navbar a{
+    margin-right: 40px;
+}
+
+ #Header .navbar > ul > li .sub-menu li{
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    width: 220px;
+    margin-top: 20px;
+    margin-left: -30px;
+    padding: 20px 30px;
+     list-style: none;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgb(0 0 0 / 15%);
+} 
+/* 
+.mega-menu {
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    display: flex;
+    visibility: hidden;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 40px 100px;
+    list-style: none;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgba(37, 37, 37, 0.15);
+    gap: 40px;
+}  */
+
+ .sub-hover a:hover .sub-menu{
+    opacity: 1;
+    visibility: visible !important;
+    top: 16%;
+} 
+
+ /* .mega-menu > li{
+    flex: 1 0;
+}
+
+ .mega-menu > li > a{
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}  */
+
+
+/* 
+#Header-phone .icons{
+    color: #000 !important;
+} */
+
+
+
+@media (max-width:576px) {
+
+    /* .container{
+        padding: 0 10px;
+    } */
+    
+    #Header {
+        display: none !important;
+    } 
+
+#Header-phone{
+    display: block;
+padding: 20px 0;
+background: #fff;
+}
+#Header-phone .icons a {
+color: #000;
+font-size: 18px;
+margin-left: 10px;
+}
+
+
+#Slider .slider-text .top-p{
+    font-size: 20px !important;
+}
+
+#Slider .slider-text h2{
+font-size: 44px !important;
+}
+
+#Slider .slider-text .bottom-p{
+    font-size: 18px !important;
+}
+
+#About .about-us-content .sub-title{
+    font-size: 20px !important;
+}
+#About .about-us-content .text{
+    font-size: 20px !important;
+}
+
+#About .logo img
+{
+    width: 100%; 
+    margin-top: 40px !important;
+}
+
+#Feature .feature-title p{
+    font-size: 22px !important;
+}
+
+#Feature .feature-title h2
+{
+    font-size: 30px !important;
+}
+
+#Feature .feature-box{
+    width: 100%;
+
+}
+
+#Feature .feature-box .feature-content h3
+{
+font-size: 25px !important;
+}
+
+#Feature .feature-box .feature-content p
+{
+    padding-top: 10px !important;
+    font-size: 22px !important;
+}
+
+#Reservation .reser-title p{
+    font-size: 20px !important;
+}
+
+#Reservation .map .iframe{
+    /* width: 100% !important; */
+    width: 437px !important;
+    height: 600px !important;
+    margin-bottom: 44px !important;
+}
+
+}
+
+
+#Header a{
+    color: black;
+    transition: .2s;
+    font-size: 20px;
+}
+
+#Header a i{
+    font-size: 16px !important;
+    margin-left: 15px;
+}
+
+#Header a:hover{
+    color: #c7a17a;
+}
+
+#Header a span{
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+#Slider{
+    height: 100vh;
+    background-image: url(https://htmldemo.net/kofi/kofi/assets/images/hero-slider/home-2/slide-1.jpg);
+    background-position: center;
+    background-size: cover;   
+      padding-top: 15rem;
+}
+
+/* #Slider .slider-text{
+    margin-left: 20px;
+} */
+
+#Slider .slider-text .top-p{
+    font-size: 24px;
+    color: white;
+}
+
+#Slider .slider-text h2{
+    font-size: 66px;
+    font-weight: bold;
+    color: white;
+}
+
+#Slider .slider-text .bottom-p{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 70px;
+    
+}
+
+#Slider .slider-text a{
+    padding: 20px 40px;
+    background-color: #c7a17a;
+    border-radius: 50px;
+    color: white;
+    transition: .3s;
+}
+
+#Slider .slider-text a:hover{
+background-color: rgb(70, 70, 70);
+color: white;
+}
+
+#About{
+    margin-top: 100px;
+
+}
+
+#About .sub-title{
+    color: #c7a17a;
+}
+
+#About .title{
+    margin-top: 15px;
+    position: relative;
+    margin-bottom: 18px;
+    color: #1F2226;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+#About .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 4px;
+    background-color: #1F2226;
+}
+
+#About .text{
+    font-size: 17px;
+    margin-bottom: 45px;
+    color: #1F2226;
+}
+
+#About .about-us-content a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+    white-space: nowrap;
+    border-width: 2px;
+    border-radius: 50px;
+    gap: 6px;
+}
+
+#Feature .feature-title {
+    margin-top: 80px;
+}
+
+#Feature .feature-title p{
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#Feature .feature-title h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#Feature .feature-box{
+    height: 100%;
+    padding: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+/* #Feature .feature-box .feature-content{
+
+} */
+
+#Reservation .reser-title p{
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: 0.25px;
+    color: #C7A17A;
+}
+
+#Reservation .reser-title h2{
+    margin-bottom: 30px;
+}
+
+#Reservation .map .iframe{
+    width:700px ;
+ height:637px; 
+}
+
+#Reservation .reservation-form {
+    padding: 40px 50px;
+    border: 1px solid #E5E5E5;
+    background-color: #fff;
+    box-shadow: 10px 25px 80px rgb(0 0 0 / 5%);
+}
+
+#Reservation .reservation-form .block-title {
+    margin-bottom: 20px;
+}
+
+#Reservation .reservation-form .input-field:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+#Reservation input.form-field:not([type=submit]):not([type=checkbox]):not([type=radio]):not([type=range]) {
+    font-size: 14px;
+    width: 100%;
+    height: 54px;
+    padding: 10px 24px;
+    border: 1px solid #E5E5E5;
+    background-color: #fff;
+}
+
+#Reservation .reservation-form .input-field textarea {
+    height: 120px;
+    width: 100%;
+}
